@@ -8,7 +8,6 @@ void main() async {
 
   // openig a box
   await Hive.openBox("Habit_Database");
-
   runApp(const MyApp());
 }
 
@@ -18,6 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: const HomePage(),
       theme: ThemeData(useMaterial3: true),
     );
