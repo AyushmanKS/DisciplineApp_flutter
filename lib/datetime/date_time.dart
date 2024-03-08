@@ -9,13 +9,13 @@ String todaysDateFormatted() {
   // month in format mm
   String month = dateTimeObject.month.toString();
   if (month.length == 1) {
-    month = '0' + month;
+    month = '0$month';
   }
 
   // day in format dd
   String day = dateTimeObject.day.toString();
   if (day.length == 1) {
-    day = '0' + day;
+    day = '0$day';
   }
 
   //final format
@@ -42,12 +42,12 @@ String convertDateTimeToString(DateTime dateTime) {
   // month in the format mm
   String month = dateTime.month.toString();
   if (month.length == 1) {
-    month = '0' + month;
+    month = '0$month';
   }
   // day in the format dd
   String day = dateTime.day.toString();
   if (day.length == 1) {
-    day = '0' + day;
+    day = '0$day';
   }
 
   // final format
