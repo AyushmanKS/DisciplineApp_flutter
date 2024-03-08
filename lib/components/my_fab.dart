@@ -8,8 +8,9 @@ class MyFloatingActonButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
+      backgroundColor: const Color.fromARGB(255, 230, 206, 214),
       onPressed: onPressed,
-      child: Icon(Icons.add),
+      child: const Icon(Icons.add),
     );
   }
 }

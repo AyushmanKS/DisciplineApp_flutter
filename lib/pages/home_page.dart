@@ -117,7 +117,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade300,
+      backgroundColor: const Color(0xff1f1f2f),
 
       // floating action button
       floatingActionButton: MyFloatingActonButton(

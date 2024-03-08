@@ -15,11 +15,20 @@ class MyAlertBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
+      backgroundColor: const Color(0xff4a4a7a),
       content: Padding(
         padding: const EdgeInsets.all(16.0),
         child: TextField(
+          autofocus: true,
+          style: const TextStyle(color: Colors.white),
           controller: controller,
-          decoration: InputDecoration(hintText: hintText),
+          decoration: InputDecoration(
+            border: InputBorder.none,
+            hintText: hintText,
+            hintStyle: const TextStyle(
+              color: Colors.white,
+            ),
+          ),
         ),
       ),
       actions: [
@@ -28,7 +37,7 @@ class MyAlertBox extends StatelessWidget {
           onPressed: onCancel,
           child: const Text(
             "Cancel",
-            style: TextStyle(color: Colors.red),
+            style: TextStyle(color: Colors.white, fontSize: 18),
           ),
         ),
 
@@ -37,7 +46,7 @@ class MyAlertBox extends StatelessWidget {
           onPressed: onSave,
           child: const Text(
             "SAVE",
-            style: TextStyle(color: Colors.red),
+            style: TextStyle(color: Colors.white, fontSize: 18),
           ),
         ),
       ],
